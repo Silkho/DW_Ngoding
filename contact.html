@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body style="padding: 0; margin: 0; font-family: 'Poppins', sans-serif;">
+            <!-- Ini Bagian Navbar-->
+        <nav style="
+            background-color: #f4f3f3;
+            position: relative;
+            padding-left: 10%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            box-shadow: 2px 2px 4px rgb(224, 224, 224), 0 0 20px rgb(224, 224, 224);">
+            <div style="display: flex; align-items: center;">
+                <img src="assets/Red.png" style="width: 48px; margin-right: 40px;"/>
+                <div style="display: flex;">
+                    <a href="index.html" style="text-decoration: none; margin-right: 40px; color: black;">Home</a>
+                    <a href="blog.html" style="text-decoration: none; color: black;">Blog</a>
+                </div>
+            </div>
+            <div style="position: absolute; right: 10%; top: 50%; transform: translate(50%, -50%);">
+                <a href="form.html" style="text-decoration: none;">
+                <button style="
+                background-color: red;
+                padding: 10px 20px;
+                font-weight: bold;
+                font-size: 12px;
+                border: none;
+                border-radius: 8px;
+                color: white;
+                cursor: pointer;
+                ">Contact Me</button>
+                </a>
+            </div>
+        </nav>
+        <center>
+            <div style="width: 360px;">
+                <form style="margin-top: 40px;">
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <label style="font-size: 16px; font-weight: bold;">Name</label>
+                        <input id="input-name" type="text" style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        margin-top: 8px;
+                        padding: 12px;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 8px;
+                        background: rgb(240, 240, 240);" />
+                    </div>
+
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <label style="font-size: 16px; font-weight: bold;">Email</label>
+                        <input id="input-email" type="text" style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        margin-top: 8px;
+                        padding: 12px;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 8px;
+                        background: rgb(240, 240, 240);" />
+                    </div>
+
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <label style="font-size: 16px; font-weight: bold;">Phone Number</label>
+                        <input id="input-phone" style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        margin-top: 8px;
+                        padding: 12px;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 8px;
+                        background: rgb(240, 240, 240);" />
+                    </div>
+
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <label style="font-size: 16px; font-weight: bold;">Subject</label>
+                        <select id="input-subject" style="
+                        width: 100%;
+                        margin-top: 8px;
+                        padding: 12px;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 8px;
+                        background: rgb(240, 240, 240);">
+                            <option></option>
+                            <option> Order Service </option>
+                            <option> Review </option>
+                            <option> Partnership </option>
+                        </select>
+                    </div>
+
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <label style="font-size: 16px; font-weight: bold;">Your Message</label>
+                        <textarea id="input-message" type="text" style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        margin-top: 8px;
+                        padding: 12px;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 8px;
+                        background: rgb(240, 240, 240);"></textarea>
+                    </div>
+
+                    <div style="text-align: left;">
+                    <button type="button" onclick="submitForm()" style="
+                        background-color: red;
+                        padding: 8px 30px;
+                        font-weight: bold;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        border: none;
+                        border-radius: 8px;
+                        color: white;
+                        cursor: pointer;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </center>
+        <script src="index.js"></script>
+    </body>
+</html>
